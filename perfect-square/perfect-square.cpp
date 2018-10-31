@@ -32,6 +32,7 @@ int main()
 //making it short :P
 #include<bits/stdc++.h>
 #define ll long long
+#define siz 500000
 using namespace std;
 int main()
 {
