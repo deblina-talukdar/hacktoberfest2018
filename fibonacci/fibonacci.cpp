@@ -1,7 +1,9 @@
 //Fibonacci Series using Recursion
 #include<iostream>
+#include<bits/stdc++.h>
+#define ll long long
 using namespace std;
-int fib(int n)
+ll fib(ll n)
 {
    if (n <= 1)
       return n;
@@ -10,7 +12,7 @@ int fib(int n)
 
 int main ()
 {
-    int n;
+    ll n;
     cin>>n;
     cout<<fib(n);
     return 0;
