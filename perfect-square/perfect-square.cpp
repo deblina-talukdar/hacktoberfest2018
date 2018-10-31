@@ -29,3 +29,17 @@ int main()
     }
 }
 
+//making it short :P
+#include<bits/stdc++.h>
+#define ll long long
+using namespace std;
+int main()
+{
+    ll n;
+    cin>>n;
+    if(sqrt(n)*sqrt(n)==n)
+        cout<<"perfect square"<<endl;
+    else
+        cout<<"Not a perfect square"<<endl;
+    return 0;
+}
