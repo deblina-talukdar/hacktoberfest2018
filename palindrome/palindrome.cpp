@@ -33,3 +33,39 @@ int main()
     
     return 0;
 }
+
+// Importing the required libraries
+#include<bits/stdc++.h>
+using namespace std;
+
+bool isPalindrome(string word) //Function using stack data structure to push in letters of the word and the reversing the word
+{
+    stack<char> temp;
+    string reversed = "";
+    for (char letter : word)
+        temp.push(letter);
+    
+    while(!(temp.empty()))
+    {
+       reversed += temp.top();
+       temp.pop();
+    }
+
+    if (reversed == word) // Checks if the reversed word is same as the actual word 
+        return true;      // If it is palindrome, returns true
+    
+    else return false;  //Else returns false
+}
+
+int main()
+{
+    cout << "Enter a word!: ";
+    string word;                     
+    cin >> word;          //Inputs word as a string
+
+    isPalindrome(word) ? cout << word << " is a palindrome!" : cout << word << " is not a palindrome!";
+    cout << endl;
+    
+    return 0;
+}
+
