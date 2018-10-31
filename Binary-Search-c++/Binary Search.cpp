@@ -36,7 +36,7 @@ int main(){
     //call the recursive function
     int index = binarySearch(input,0,n-1,number);
     if(index!=-1){
-        cout<<number<<" is found at index: "<<index<<endl;
+        cout<<number<<" is found at index: "<<index+1<<endl; //showing the 1 based indexing
     }else{
         cout<<number<<" not found"<<endl;
     }
